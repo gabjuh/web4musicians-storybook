@@ -1,0 +1,15 @@
+# Build the package before publishing:
+
+'pnpm run build'
+
+Make sure this creates a dist/ folder with:
+    index.js
+    index.d.ts
+    (optional) .cjs, .d.cts files if using CommonJS too
+
+4. Version control using semantic versioning (semver)
+
+Bug fix              =>	        npm version patch          =>	1.0.1
+Backward-compatible  =>	        feature	npm version minor	 => 1.1.0
+Breaking change	     =>         npm version major          =>	2.0.0
+
